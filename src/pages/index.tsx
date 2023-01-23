@@ -1,3 +1,5 @@
+import AddEmployeeDialog from '@/components/AddEmployeeDialog';
+import Table from '@/components/Table';
 import Head from 'next/head'
 import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
@@ -14,13 +16,9 @@ export default function Home() {
             </Head>
             <div className="py-5">
                 <h1 className="text-xl md:text-5xl text-center font-bold">Employee Management </h1>
-            
-                <div className="container mx-auto flex justify-between py-5 border-b">
-                    <div className="left flex gap-3">
-                        <Button icon="pi pi-user-plus" label="Add Employee" className="py-3" />
-                    </div>
-                </div>
             </div>
+            {/* Table */}
+            <Table />
         </section>
     )
 }
